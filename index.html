@@ -4,67 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unending Array of Zeros</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .zero-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 0;
-            padding: 20px;
-        }
-        .zero {
-            font-size: 20px;
-            padding: 10px;
-            margin: 5px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 <body>
-
-<div class="zero-container" id="zeroContainer"></div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log("Page Loaded");
-
-        const zeroContainer = document.getElementById('zeroContainer');
-        const zerosPerBatch = 100;  // How many zeros to add per scroll event
-
-        // Function to add zeros to the container
-        function addZeros() {
-            console.log("Adding zeros...");
-            for (let i = 0; i < zerosPerBatch; i++) {
-                const zeroDiv = document.createElement('div');
-                zeroDiv.className = 'zero';
-                zeroDiv.innerText = '0';
-                zeroContainer.appendChild(zeroDiv);
-            }
-        }
-
-        // Initial load of zeros
-        addZeros();
-
-        // Detect when the user is close to the bottom of the page
-        window.addEventListener('scroll', () => {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-                addZeros();  // Add more zeros when user scrolls near the bottom
-            }
-        });
-    });
-</script>
-
-</body>
-</html>
+    <!-- Large block of "0"s repeated -->
+    <div>
+        0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
